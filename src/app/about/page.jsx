@@ -42,16 +42,16 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">GET TO KNOW ME</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-            I've loved building websites since my childhood. 
+            I&apos;ve loved building websites since my childhood. 
             It all started when I was playing Club Penguin, an online game for which I built a fan blog in 2012. 
             Back on those times, website design was not as prevalent as it is today but this experience definitely kindled my interest in the field. 
-            As time progressed, I've grown from learning the basics of Adobe Photoshop, HTML, and CSS to delving deep into JavaScript and its powerful frameworks like ReactJS and NextJS. 
-            Later on, I've come to specialize in UI design, familiarizing myself with design software tools such as Figma and Adobe XD.
+            As time progressed, I&apos;ve grown from learning the basics of Adobe Photoshop, HTML, and CSS to delving deep into JavaScript and its powerful frameworks like ReactJS and NextJS. 
+            Later on, I&apos;ve come to specialize in UI design, familiarizing myself with design software tools such as Figma and Adobe XD.
             My background in development alongside with my my growing passion for design lets me to be part of the full spectrum of the creative process, going from ideating concepts from scratch to making those ideas a reality by building them in apps or websites.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-              Loving what you do is key to creating exceptional work, and that's my ultimate aim in this journey.
+              Loving what you do is key to creating exceptional work, and that&apos;s my ultimate aim in this journey.
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
