@@ -10,7 +10,7 @@ const ContactPage = () => {
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState(false)
 
-  const text= "Hello!"
+  const text= "Contact Me!"
 
   const form = useRef();
 
@@ -45,7 +45,6 @@ const ContactPage = () => {
             {text.split("").map((letter, index)=>(
               <motion.span key={index} initial={{opacity:1}} animate={{opacity: 0}} transition={{duration: 3, repeat: Infinity, delay: index * 0.1}}>{letter}</motion.span>
             ))}
-            👋
           </motion.div>
         </div>
         <form ref={form} onSubmit={sendEmail} className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24">
