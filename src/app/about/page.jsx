@@ -32,7 +32,7 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image
-              src="/../myself.jpg"
+              src="/myself.jpg"
               alt=""
               width={112}
               height={112}
@@ -56,7 +56,7 @@ const AboutPage = () => {
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
               <Image
-                src="/../mysignature.png"
+                src="/mysignature.png"
                 alt=""
                 width={256}
                 height={256}

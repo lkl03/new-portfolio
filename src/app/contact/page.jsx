@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState, useRef } from "react";
+import Link from "next/link";
 
 import emailjs from '@emailjs/browser'
 
@@ -40,12 +41,19 @@ const ContactPage = () => {
   return (
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration: 0.6}}>
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-2 items-center justify-center">
+        <div className="h-1/4 lg:w-1/2 flex items-center justify-center text-6xl">
           <motion.div>
             {text.split("").map((letter, index)=>(
               <motion.span key={index} initial={{opacity:1}} animate={{opacity: 0}} transition={{duration: 3, repeat: Infinity, delay: index * 0.1}}>{letter}</motion.span>
             ))}
           </motion.div>
+        </div>
+        <div className="pb-48">
+            <Link href="/CV-Luca-Lago.pdf" download="CV-Luca-Lago" target="_blank" rel="noopener noreferrer">
+              <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white transition-all ease-in-out duration-300 hover:bg-transparent hover:text-black">Download My Resume</button>
+            </Link>
+        </div>
         </div>
         <form ref={form} onSubmit={sendEmail} className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24">
           <span>Hi Luca,</span>
